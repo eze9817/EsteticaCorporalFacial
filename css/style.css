@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montenegrin+Gothic+One&display=swap');
+
+/*----------------------generales----------------------------*/
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-style: italic;
+    font-weight: 600;
+    color: #de3271d8;
+    font-size: 1.5rem;
+}
+
+h2,
+h3 {
+    color: #de3271d8;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h4{
+    font-size: 1.2rem;
+}
+
+p {
+
+    display: inline-block;
+}
+
+main section div ul p {
+    color: white;
+    background-color: #d8a7b1;
+    padding: 4px 8px;
+}
+
+
+/*----------------------header-------------------------------*/
+header,
+footer {
+    padding: 20px;
+    color: black;
+    background-color: #f2aeae;
+}
+
+
+/*------------------------main---------------------------------*/
+body {
+    background-color: #f0c3c3;
+    font-family: "Inter", sans-serif;
+
+}
+
+.corporales {
+    background-color: #f9dce2;
+}
+
+/*------------------------footer---------------------------------*/
+
+
+/* -----barra de navegacion---------------- */
+/* .container-fluid{
+    display: flex;
+    justify-content: space-between;
+} */
+  /* nav {
+    display: flex;
+    align-items: end;
+}  */
+  
+.list-nav{
+    display: flex;
+    
+    list-style: none;
+    flex-direction: column;
+    gap: 10px;
+}    
+
+.navbar-collapse{
+    display: flex;
+    justify-content: end;
+}
+
+.titulo{
+    text-align: center;
+}
+
+/* estos estilos los conservo por si mas adealnte lo necesito usar */
+ /* .titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  */
+
+/* .menu-nav {
+    display: flex;
+    flex-direction: column;
+
+}  */
+
+ /* .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+   
+    
+}   */
+
+/* --------------logo------------------------- */
+.logo-img {
+    display: flex;
+    max-width: 20vh;
+    border-radius: 2rem;
+
+} 
+
+/* estos estilos los conservo por si mas adealnte lo necesito usar */
+/* .cont-depi,
+.cont-facial,
+.cont-qsomos,
+.cont-nmision  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 2rem;
+    border-radius: 16px;
+    border-style: dashed;
+} */
+
+.cont-trata {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.texto-depi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contenedor2 {
+    display: flex;
+    padding: 20px;
+    
+}
+
+
+
+/* .texto-depi,
+.texto-facial, */
+.text-mision,
+.text-somos{
+    font-size: 1.1rem;
+    min-height: 200px;
+    gap: 10px;
+}
+
+
+
+.comentarios{
+    border-radius: 16px;
+    font-size: 1;
+    max-width: 500px;
+
+}
+
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.imgs {
+    display: flex;
+    max-width:  100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.secvalores{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.titvalor{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.valoreslista{
+    font-weight: 800;
+}
+
+.coment::after{
+    content: '⭐⭐⭐⭐⭐';
+    
+}
+
+.valoreslista::marker{
+    content: '✅';
+}
+
+.cover-img-carru{
+    height: 50vh;
+    
+}
+
+.card-title::before{
+    content: '❤️';
+
+}
+
+.btn-reserva {
+    background-color: #e85d8c;
+    color: white;
+    border: none;
+}
+
+.btn-reserva:hover {
+    background-color: lch(23.2% 26.87 351.32);
+    color: white;
+}
+
+.seleccion-turno{
+    display: flex;
+    padding: 0,5rem;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.card {
+    background-color: rgba(207, 175, 203, 0.708);
+}
+
+.borde section{
+    border: 1px solid black;
+    border-radius: 16px;
+
+}
+
+.btn-cards {
+    background-color: rgb(89, 38, 62);
+}
+
+.btn-cards:hover {
+    background-color: lch(24.46% 52.84 301.62)
+
+}
+
+.card-link{
+    color: rgba(255, 255, 255, 0.861);
+    text-decoration: none;
+}
+
+.card-link::after {
+    content: '😁';
+} 
+
+
+.canvasfondo {
+    background-color: #f7d9d7;
+}
+
+
+/* @media querie tablet */
+@media (min-width: 700px) {
+     .grid-eje {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+
+
+    } 
+     h1 {
+        font-style: italic;
+        font-weight: 600;
+     }
+
+     .cover-img-carru{
+        height: 100vh;
+        
+     }
+
+   
+
+}
+
+
+
+
+
+
+/* @media querie desktop */
+ @media (min-width: 1024px){
+    .grid-eje {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    } 
+     .list-nav { 
+        display: flex;
+        flex-direction: row;
+     }
+
+     .cover-img-carru{
+        height: 100vh;
+        
+     }
+   
+
+
+} 
+
