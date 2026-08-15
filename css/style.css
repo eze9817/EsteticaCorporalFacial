@@ -281,7 +281,7 @@ footer ul li {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.resefooter {
+.reservafooter {
     display: flex;
     flex-direction: column;
 }
@@ -296,6 +296,10 @@ footer ul li {
 
 
 
+    }
+    .grid-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     h1 {
