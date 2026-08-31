@@ -1,0 +1,80 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins";
+
+body {
+    background-color: v.$cfondobody;
+    font-family: v.$typifuetebody;
+}
+
+.cont-trata {
+    @extend %flex-contenido;
+}
+
+.texto-depi {
+    @extend %flex-contenido;
+}
+
+.contenedor2 {
+    @include mixins.general-flex;
+    padding: v.$paddincio;
+}
+
+.text-mision {
+    @extend %estilotexto;
+}
+
+.text-somos {
+    @extend %estilotexto;
+}
+
+.comentarios {
+    border-radius: v.$bordecoment;
+    max-width: 500px;
+}
+
+.imgs {
+    @include mixins.general-flex;
+    border-radius: v.$bordeimg;
+    max-width: 100%;
+}
+
+.secvalores {
+    @include mixins.general-flex;
+    padding: v.$paddincio;
+    gap: v.$gapinicio;
+    @extend %flexcolumna;
+}
+
+.cont-qsomos {
+    padding: v.$paddincio;
+}
+
+.cont-nmision {
+    padding: v.$paddincio;
+}
+
+.valoreslista {
+    @extend %letranegrita;
+
+    &::marker {
+        content: '✅';
+    }
+}
+
+.coment::after {
+    content: '⭐⭐⭐⭐⭐';
+}
+
+.cover-img-carru {
+    height: 50vh;
+
+}
+
+.borde section {
+    border: 1px solid black;
+    border-radius: v.$bordecoment;
+}
+
+.canvasfondo {
+    background-color: v.$cfondocanva;
+}

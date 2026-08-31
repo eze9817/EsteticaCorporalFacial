@@ -1,0 +1,19 @@
+@use "../utilities/variables" as v;
+
+.btn-reserva {
+    background-color: v.$colorbuttonreser;
+    color: v.$cletrablanco;
+
+    &:hover{
+        background-color: v.$cbotonhover-reser;
+        color: v.$cletrablanco;
+    }
+}
+
+.btn-cards {
+    background-color: v.$cbtn-card;
+
+    &:hover {
+        background-color: v.$cbtn-cardhover;
+    }
+}

@@ -1,0 +1,34 @@
+@use "../utilities/variables" as v;
+
+h1 {
+    font-style: italic;
+    font-weight: 600;
+    color: v.$colorh1;
+    font-size: 1.5rem;
+}
+
+h2,
+h3 {
+    text-align: v.$textcenter;
+    color: v.$colorh1;
+    font-family: v.$typifuetesub;
+}
+
+h4 {
+    font-size: v.$tfuentesubti;
+}
+
+
+p {
+    font-size: v.$tfuenteP;
+}
+
+main section div ul p {
+    padding: 4px 8px;
+
+    &:hover{
+        background-color: v.$colorhoverp;
+        color: v.$cletrablanco;
+    }
+
+}

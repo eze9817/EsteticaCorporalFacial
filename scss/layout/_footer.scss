@@ -1,0 +1,21 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins";
+
+footer { 
+    padding: v.$paddincio;
+    background-color: v.$cfondoheader;
+    ul {
+        @include mixins.general-flex;
+        padding: v.$paddincio;
+        @extend %flexcolumna;
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+.reservafooter {
+    @include mixins.general-flex;
+    @extend %flexcolumna;
+}

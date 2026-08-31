@@ -1,0 +1,18 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins";
+
+header {
+    padding: v.$paddincio;
+    background-color: v.$cfondoheader;
+}
+
+.titulo {
+    text-align: v.$textcenter;
+}
+
+.logo-img {
+   @include mixins.general-flex;
+    max-width: 20vh;
+    border-radius: v.$bordelogo;
+
+}

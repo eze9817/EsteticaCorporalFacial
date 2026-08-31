@@ -1,0 +1,28 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins";
+
+
+.card {
+    background-color: v.$colorcard;
+}
+
+.card-title::before {
+    content: '❤️';
+}
+
+.seleccion-turno {
+    @include mixins.general-flex;
+    padding: 5px;
+    gap: 5px;
+    @extend %flexcolumna;
+}
+
+.card-link {
+    color: v.$cletrablanco;
+    text-decoration: none;
+
+    &::after {
+        content: '😁';
+    }
+}
+

@@ -1,0 +1,66 @@
+/*colores letra*/
+$colorh1: #de3271d8;
+$colorhoverp: #d8a7b1;
+$cletrablanco: #ffffff;
+$colorcard: rgba(207, 175, 203, 0.708);
+$colorbuttonreser: #e85d8c;
+$cbotonhover-reser: lch(23.2% 26.87 351.32);
+$cbtn-card: rgb(89, 38, 62);
+$cbtn-cardhover: lch(24.46% 52.84 301.62);
+
+
+//tamanaño de letras
+$tfuentetitulo: 1.5rem;
+$tfuentesubti: 1.2rem;
+$tfuenteP: 1rem;
+
+//type fuente
+$typifuenteh1: italic;
+$typifuetesub: 'Times New Roman', Times, serif;
+$typifuetebody: "Inter", sans-serif;
+
+
+//paddings 
+$paddincio: padding 20px;
+
+//gap 
+$gapinicio: 20px;
+
+//colores fondo
+$cfondoheader:#f2aeae;
+$cfondobody:#f0c3c3;
+$cfondocanva:#f7d9d7;
+
+//border radio
+$bordelogo: 2rem;
+$bordecoment: 16px;
+$bordeimg: 20px;
+
+//alinacion de texto
+$textcenter: center;
+$textend: end;
+$textstart: start;
+
+//extend contenido index
+%flex-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//extend texto sobre nosotros
+%estilotexto {
+    font-size: 1.1rem;
+    min-height: 200px;
+    gap: 10px;
+}
+
+//extend direccion columna
+%flexcolumna{ 
+    flex-direction: column;
+}
+
+//extend letra negrita
+%letranegrita {
+    font-weight: 800;
+}
