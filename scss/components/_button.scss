@@ -17,3 +17,12 @@
         background-color: v.$cbtn-cardhover;
     }
 }
+
+.btnnav {
+    background-color: v.$colorbuttonreser;
+
+    &:hover{
+        background-color: v.$cbotonhover-reser;
+        color: v.$cletrablanco;
+    }
+}

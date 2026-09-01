@@ -1,0 +1,53 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+
+@media (min-width: 700px) {
+    .grid-eje {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+
+
+    }
+    .grid-footer {
+        @include mixins.general-flex;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h1 {
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    .cover-img-carru {
+        height: 100vh;
+
+    }
+}    
+
+@media (min-width: 1024px) {
+
+    .grid-eje {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .list-nav {
+        @include mixins.general-flex;
+        flex-direction: row;
+    }
+
+    .cover-img-carru {
+        height: 100vh;
+
+    }
+
+}
+
+
+
+
+
+
+
