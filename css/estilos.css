@@ -155,6 +155,11 @@ body {
   background-color: #f7d9d7;
 }
 
+.carousel-inner {
+  width: 70vw;
+  margin: 0 auto;
+}
+
 .card {
   background-color: rgba(207, 175, 203, 0.708);
 }
