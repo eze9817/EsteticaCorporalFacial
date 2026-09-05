@@ -1,18 +1,22 @@
-/*colores letra*/
-$colorh1: #de3271d8;
-$colorhoverp: #d8a7b1;
-$cletrablanco: #ffffff;
-$colorcard: rgba(207, 175, 203, 0.708);
-$colorbuttonreser: #e85d8c;
-$cbotonhover-reser: lch(23.2% 26.87 351.32);
-$cbtn-card: rgb(89, 38, 62);
-$cbtn-cardhover: lch(24.46% 52.84 301.62);
+//colores
+$color-titulo_principal: #de3271d8;
+$color-interaccion-hover-p: #d8a7b1;
+$color-texto-claro: #ffffff;
+$color-fondo-tarjeta: rgba(207, 175, 203, 0.708);
+$color-boton-primario: #e85d8c;
+$color-boton-primerio-hover: lch(23.2% 26.87 351.32);
+$color-boton-secundario: rgb(89, 38, 62);
+$color-boton-secundario-hover: lch(24.46% 52.84 301.62);
 
+//colores fondo
+$color-fondo-encabezado-pie: #f2aeae;
+$color-fondo-principal: #f0c3c3;
+$color-fondo-offcanvas: #f7d9d7;
 
-//tamanaño de letras
-$tfuentetitulo: 1.5rem;
-$tfuentesubti: 1.2rem;
-$tfuenteP: 1rem;
+//tipo grafia por funcion
+$tamano-titulo-principal: 1.5rem;
+$tamano-subtitulo: 1.2rem;
+$tamano-parrafo: 1rem;
 
 //type fuente
 $typifuenteh1: italic;
@@ -20,26 +24,23 @@ $typifuetesub: 'Times New Roman', Times, serif;
 $typifuetebody: "Inter", sans-serif;
 
 
-//paddings 
-$paddincio: padding 20px;
+//espaciado por funcion 
+$espaciado-interno-secciones: 20px;
 
 //gap 
-$gapinicio: 20px;
+$separacion-elementos: 20px;
 
-//colores fondo
-$cfondoheader:#f2aeae;
-$cfondobody:#f0c3c3;
-$cfondocanva:#f7d9d7;
+
 
 //border radio
-$bordelogo: 2rem;
-$bordecoment: 16px;
-$bordeimg: 20px;
+$radio-logo: 2rem;
+$radio-tarjeta-comentarios: 16px;
+$radio-imagenes: 20px;
 
 //alinacion de texto
-$textcenter: center;
-$textend: end;
-$textstart: start;
+$alinacion-parrafo: center;
+$alinacion-final-seccion: end;
+$alinacion-inicial-seccion: start;
 
 //extend contenido index
 %flex-contenido {
@@ -56,7 +57,7 @@ $textstart: start;
 }
 
 //extend direccion columna
-%flexcolumna{ 
+%flexcolumna {
     flex-direction: column;
 }
 
@@ -68,4 +69,14 @@ $textstart: start;
 //extend letra negrita
 %letranegrita {
     font-weight: 800;
+}
+
+//extend color boton y hover 
+%color-boton-hover {
+    background-color: #e85d8c;
+
+    &:hover {
+        background-color: lch(23.2% 26.87 351.32deg);
+        color: #ffffff;
+    }
 }

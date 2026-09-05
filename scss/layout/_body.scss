@@ -2,21 +2,21 @@
 @use "../utilities/mixins";
 
 body {
-    background-color: v.$cfondobody;
+    background-color: v.$color-fondo-principal;
     font-family: v.$typifuetebody;
 }
 
 .cont-trata {
-    @extend %flex-contenido;
+    @include mixins.contenido-flex(center, center);
 }
 
 .texto-depi {
-    @extend %flex-contenido;
+    @include mixins.contenido-flex(center, center);
 }
 
 .contenedor2 {
-    @include mixins.general-flex;
-    padding: v.$paddincio;
+    display: flex;
+    padding: v.$espaciado-interno-secciones;
 }
 
 .text-mision {
@@ -28,29 +28,29 @@ body {
 }
 
 .comentarios {
-    border-radius: v.$bordecoment;
+    border-radius: v.$radio-tarjeta-comentarios;
     max-width: 500px;
 }
 
 .imgs {
-    @include mixins.general-flex;
-    border-radius: v.$bordeimg;
+    display: flex;
+    border-radius: v.$radio-imagenes;
     max-width: 100%;
 }
 
 .secvalores {
-    @include mixins.general-flex;
-    padding: v.$paddincio;
-    gap: v.$gapinicio;
+    display: flex;
+    padding: v.$espaciado-interno-secciones;
+    gap: v.$separacion-elementos;
     @extend %flexcolumna;
 }
 
 .cont-qsomos {
-    padding: v.$paddincio;
+    padding: v.$espaciado-interno-secciones;
 }
 
 .cont-nmision {
-    padding: v.$paddincio;
+    padding: v.$espaciado-interno-secciones;
 }
 
 .valoreslista {
@@ -72,11 +72,11 @@ body {
 
 .borde section {
     border: 1px solid black;
-    border-radius: v.$bordecoment;
+    border-radius: v.$radio-tarjeta-comentarios;
 }
 
 .canvasfondo {
-    background-color: v.$cfondocanva;
+    background-color: v.$color-fondo-offcanvas;
 }
 
 .carousel-inner {

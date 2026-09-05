@@ -2,17 +2,17 @@
 @use "../utilities/mixins";
 
 header {
-    padding: v.$paddincio;
-    background-color: v.$cfondoheader;
+    padding: v.$espaciado-interno-secciones;
+    background-color: v.$color-fondo-encabezado-pie;
 }
 
 .titulo {
-    text-align: v.$textcenter;
+    text-align: v.$alinacion-parrafo;
 }
 
 .logo-img {
-   @include mixins.general-flex;
+    display: flex;
     max-width: 20vh;
-    border-radius: v.$bordelogo;
+    border-radius: v.$radio-logo;
 
 }

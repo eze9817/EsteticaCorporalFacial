@@ -3,22 +3,33 @@
 
 
 .card {
-    background-color: v.$colorcard;
-}
+    background-color: v.$color-fondo-tarjeta;
 
-.card-title::before {
+    & .card-title::before {
     content: '❤️';
 }
 
+.card-link {
+    color: v.$color-texto-claro;
+    text-decoration: none;
+
+    &::after {
+        content: '😁';
+    }
+}
+}
+
+
+
 .seleccion-turno {
-    @include mixins.general-flex;
+    display: flex;
     padding: 5px;
     gap: 5px;
     @extend %flexcolumna;
 }
 
 .card-link {
-    color: v.$cletrablanco;
+    color: v.$color-texto-claro;
     text-decoration: none;
 
     &::after {

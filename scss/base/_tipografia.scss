@@ -3,32 +3,32 @@
 h1 {
     font-style: italic;
     font-weight: 600;
-    color: v.$colorh1;
-    font-size: 1.5rem;
+    color: v.$color-titulo_principal;
+    font-size: v.$tamano-titulo-principal;
 }
 
 h2,
 h3 {
-    text-align: v.$textcenter;
-    color: v.$colorh1;
+    text-align: v.$alinacion-parrafo;
+    color: v.$color-titulo_principal;
     font-family: v.$typifuetesub;
 }
 
 h4 {
-    font-size: v.$tfuentesubti;
+    font-size: v.$tamano-subtitulo;
 }
 
 
 p {
-    font-size: v.$tfuenteP;
+    font-size: v.$tamano-parrafo;
 }
 
 main section div ul p {
     padding: 4px 8px;
 
     &:hover{
-        background-color: v.$colorhoverp;
-        color: v.$cletrablanco;
+        background-color: v.$color-interaccion-hover-p;
+        color: v.$color-texto-claro;
     }
 
 }

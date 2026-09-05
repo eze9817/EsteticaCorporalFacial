@@ -11,7 +11,7 @@
 
     }
     .grid-footer {
-        @include mixins.general-flex;
+        display: flex;
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -34,7 +34,7 @@
     }
 
     .list-nav {
-        @include mixins.general-flex;
+        display: flex;
         flex-direction: row;
     }
 

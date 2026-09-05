@@ -1,28 +1,19 @@
 @use "../utilities/variables" as v;
 
 .btn-reserva {
-    background-color: v.$colorbuttonreser;
-    color: v.$cletrablanco;
-
-    &:hover{
-        background-color: v.$cbotonhover-reser;
-        color: v.$cletrablanco;
-    }
-}
-
-.btn-cards {
-    background-color: v.$cbtn-card;
-
-    &:hover {
-        background-color: v.$cbtn-cardhover;
-    }
+    @extend %color-boton-hover;
+    color: v.$color-texto-claro
 }
 
 .btnnav {
-    background-color: v.$colorbuttonreser;
+    @extend %color-boton-hover; 
 
-    &:hover{
-        background-color: v.$cbotonhover-reser;
-        color: v.$cletrablanco;
+}
+.btn-cards {
+    background-color: v.$color-boton-secundario;
+
+    &:hover {
+        background-color: v.$color-boton-secundario-hover;
     }
 }
+

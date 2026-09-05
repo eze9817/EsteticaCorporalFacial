@@ -1,4 +1,5 @@
-@mixin general-flex{
+@mixin contenido-flex ($justify, $aling) {
     display: flex;
+    justify-content: $justify;
+    align-items: $aling;
 }
-

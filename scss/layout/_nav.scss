@@ -1,14 +1,14 @@
 @use "../utilities/mixins";
 
 .navbar-collapse {
-    @include mixins.general-flex;
+    display: flex;
     justify-content: end;
 
 
 }
 
 .list-nav {
-    @include mixins.general-flex;
+    display: flex;
     list-style: none;
     flex-direction: column;
     gap: 10px;

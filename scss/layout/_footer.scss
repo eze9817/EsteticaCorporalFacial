@@ -2,11 +2,11 @@
 @use "../utilities/mixins";
 
 footer { 
-    padding: v.$paddincio;
-    background-color: v.$cfondoheader;
+    padding: v.$espaciado-interno-secciones;
+    background-color: v.$color-fondo-encabezado-pie;
     ul {
-        @include mixins.general-flex;
-        padding: v.$paddincio;
+        display: flex;
+        padding: v.$espaciado-interno-secciones;
         @extend %flexcolumna;
 
         li {
@@ -16,6 +16,6 @@ footer {
 }
 
 .reservafooter {
-    @include mixins.general-flex;
+    display: flex;
     @extend %flexcolumna;
 }
