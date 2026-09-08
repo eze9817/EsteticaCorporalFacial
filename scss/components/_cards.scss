@@ -5,18 +5,25 @@
 .card {
     background-color: v.$color-fondo-tarjeta;
 
-    & .card-title::before {
-    content: '❤️';
-}
 
-.card-link {
-    color: v.$color-texto-claro;
-    text-decoration: none;
 
-    &::after {
-        content: '😁';
+
+        & .card-title::before {
+            content: '❤️';
+        }
+    
+
+
+    .card-link {
+        color: v.$color-texto-claro;
+        text-decoration: none;
+
+        &::after {
+            content: '😁';
+        }
     }
-}
+
+
 }
 
 
@@ -36,4 +43,3 @@
         content: '😁';
     }
 }
-
