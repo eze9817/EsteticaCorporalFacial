@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -36,7 +37,7 @@
     </header>
     <main class="grid-eje">
 
-        <div class="card">
+        <div class="card" data-aos="flip-left">
             <!-- implemente card con tratamientos y con boton  para resevar turno -->
             <img src="../images/drenajeLinfatico.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -45,12 +46,12 @@
                     eliminación de líquidos.</p>
             </div>
             <!-- utilice un offcanvas, para que la reserva de turno tenga una seccion aparte -->
-            <button class=" btn btn-cards card-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+            <button class=" btn btn-cards card-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling-1"
                 aria-controls="offcanvasScrolling">Reservar Turno</button>
             <div class="offcanvas offcanvas-start canvasfondo" data-bs-scroll="true" data-bs-backdrop="false"
-                tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                tabindex="-1" id="offcanvasScrolling-1" aria-labelledby="offcanvasScrollingLabel1" >
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Reservar turno</h5>
+                    <h5 class="offcanvas-title">Reservar turno</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="card">
@@ -86,7 +87,7 @@
             </div>
         </div>
         </div>
-        <div class=" card">
+        <div class="card" data-aos="flip-right">
                             <!-- implemente card con tratamientos y con boton  para resevar turno -->
                             <img src="../images/masajesCorporales.png" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -96,13 +97,13 @@
                                     bienestar.</p>
                             </div>
                             <button class=" btn btn-cards card-link" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Reservar
+                                data-bs-target="#offcanvasScrolling-2" aria-controls="offcanvasScrolling">Reservar
                                 Turno</button>
                             <div class="offcanvas offcanvas-start canvasfondo" data-bs-scroll="true"
-                                data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
-                                aria-labelledby="offcanvasScrollingLabel">
+                                data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling-2"
+                                aria-labelledby="offcanvasScrollingLabel-2">
                                 <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Reservar turno</h5>
+                                    <h5 class="offcanvas-title">Reservar turno</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                         aria-label="Close"></button>
                                 </div>
@@ -142,7 +143,7 @@
             </div>
         </div>
         </div>
-        <div class=" card"">
+        <div class="card" data-aos="flip-up">
                                             <!-- implemente card con tratamientos y con boton  para resevar turno -->
                                             <img src=" ../images/modelacionCorporal.png" class="card-img-top" alt="...">
                                             <div class="card-body">
@@ -151,13 +152,13 @@
                                                     apariencia de diferentes zonas del cuerpo.</p>
                                             </div>
                                             <button class=" btn btn-cards card-link" data-bs-toggle="offcanvas"
-                                                data-bs-target="#offcanvasScrolling"
+                                                data-bs-target="#offcanvasScrolling-3"
                                                 aria-controls="offcanvasScrolling">Reservar Turno</button>
                                             <div class="offcanvas offcanvas-start canvasfondo" data-bs-scroll="true"
-                                                data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+                                                data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling-3"
                                                 aria-labelledby="offcanvasScrollingLabel">
                                                 <div class="offcanvas-header">
-                                                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Reservar
+                                                    <h5 class="offcanvas-title">Reservar
                                                         turno</h5>
                                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                                         aria-label="Close"></button>
@@ -253,9 +254,12 @@
     </footer>
 
 
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-                                                                        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-                                                                        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script>
+  AOS.init();
+</script>
 </body>
 
 </html>

@@ -3,11 +3,17 @@
 
 
 .card {
+
+    padding: v.$espaciado-interno-secciones / 2;
+    margin: v.$separacion-elementos / 2;
     background-color: v.$color-fondo-tarjeta;
 
 
 
 
+    .card-img-top {
+        height: 400px;
+    }
         & .card-title::before {
             content: '❤️';
         }
@@ -31,7 +37,7 @@
 .seleccion-turno {
     display: flex;
     padding: 5px;
-    gap: 5px;
+    gap: v.$espaciado-interno-secciones - 15px;
     @extend %flexcolumna;
 }
 
