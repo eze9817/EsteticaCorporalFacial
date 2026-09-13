@@ -25,10 +25,10 @@
   font-weight: 800;
 }
 
-.btn-reserva, .btnnav {
+.btnnav {
   background-color: #e85d8c;
 }
-.btn-reserva:hover, .btnnav:hover {
+.btnnav:hover {
   background-color: lch(23.2% 26.87 351.32deg);
   color: #ffffff;
 }
@@ -36,8 +36,9 @@
 h1 {
   font-style: italic;
   font-weight: 600;
-  color: rgba(222, 50, 113, 0.8470588235);
+  color: #ffffff;
   font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 h2,
@@ -66,6 +67,10 @@ main section div ul p:hover {
 header {
   padding: 20px;
   background-color: #f2aeae;
+}
+header .contenedor-h1 {
+  background: #f2aeae;
+  background: radial-gradient(circle, rgb(242, 174, 174) 2%, rgb(232, 93, 140) 18%, rgb(232, 95, 141) 30%, rgb(236, 128, 155) 52%, rgb(89, 38, 62) 68%, rgb(236, 128, 155) 89%);
 }
 
 .titulo {
@@ -186,6 +191,40 @@ section h4 {
   font-weight: 600;
 }
 
+.tracking-in-expand-fwd-top {
+  -webkit-animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+    transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+.titvalor,
+.title-nuestra-mision,
+.title-somos {
+  transition: 1s ease-in;
+}
+.titvalor:hover,
+.title-nuestra-mision:hover,
+.title-somos:hover {
+  color: rgb(93.4668786433%, 53.9841017488%, 67.3343932167%);
+  background-color: #59263e;
+  border-radius: 16px;
+}
+
 footer {
   padding: 20px;
   background-color: #f2aeae;
@@ -236,9 +275,61 @@ footer ul li {
 }
 
 .btn-reserva {
-  color: #ffffff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  background: #e85d8c;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
 }
 
+.btn-reserva:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #59263e;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.btn-reserva:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.btn-reserva span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  color: #fff;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-reserva:hover span {
+  color: #eceff2;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .btnnav {
   -webkit-animation: shadow-drop-2-bottom 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-2-bottom 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

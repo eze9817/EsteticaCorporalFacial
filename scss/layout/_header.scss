@@ -2,17 +2,28 @@
 @use "../utilities/mixins";
 
 header {
-    padding: v.$espaciado-interno-secciones;
-    background-color: v.$color-fondo-encabezado-pie;
-}
+  padding: v.$espaciado-interno-secciones;
+  background-color: v.$color-fondo-encabezado-pie;
 
+  .contenedor-h1 {
+    background: #f2aeae;
+    background: radial-gradient(
+      circle,
+      rgba(242, 174, 174, 1) 2%,
+      rgba(232, 93, 140, 1) 18%,
+      rgba(232, 95, 141, 1) 30%,
+      rgba(236, 128, 155, 1) 52%,
+      rgba(89, 38, 62, 1) 68%,
+      rgba(236, 128, 155, 1) 89%
+    );
+  }
+}
 .titulo {
-    text-align: v.$alinacion-parrafo;
+  text-align: v.$alinacion-parrafo;
 }
 
 .logo-img {
-    display: flex;
-    max-width: 20vh;
-    border-radius: v.$radio-logo;
-
+  display: flex;
+  max-width: 20vh;
+  border-radius: v.$radio-logo;
 }
