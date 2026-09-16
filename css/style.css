@@ -118,6 +118,10 @@ body {
   font-size: 18px;
 }
 
+.seccion-datos p {
+  margin: 10px;
+}
+
 .comentarios {
   border-radius: 16px;
   max-width: 500px;
@@ -385,7 +389,9 @@ footer p {
     display: flex;
     max-width: 15vh;
   }
-  .grid-eje {
+  .grid-eje,
+  .grid-eje-estetica-corporal,
+  .grid-eje-contacto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -416,6 +422,11 @@ footer p {
   .grid-eje {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-eje-estetica-corporal,
+  .grid-eje-contacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
   .list-nav {
     display: flex;

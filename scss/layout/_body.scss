@@ -23,6 +23,12 @@ body {
     font-size: 18px;
 }
 
+.seccion-datos {
+    p {
+        margin: 10px;
+    }
+}
+
 .text-somos {
     @extend %estilotexto;
 }
