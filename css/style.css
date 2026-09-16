@@ -114,6 +114,10 @@ body {
   display: flex;
 }
 
+.text-mision {
+  font-size: 18px;
+}
+
 .comentarios {
   border-radius: 16px;
   max-width: 500px;
@@ -132,8 +136,6 @@ body {
 
 .secvalores {
   display: flex;
-  padding: 20px;
-  gap: 20px;
 }
 
 .cont-qsomos {
@@ -141,7 +143,7 @@ body {
 }
 
 .cont-nmision {
-  padding: 20px;
+  padding: 10px;
 }
 
 .valoreslista::marker {
@@ -413,7 +415,7 @@ footer p {
   }
   .grid-eje {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .list-nav {
     display: flex;
@@ -432,6 +434,9 @@ footer p {
   .texto-depi,
   .texto-facial {
     font-size: 18px;
+  }
+  .text-somos {
+    font-size: 20px;
   }
 }
 

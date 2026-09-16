@@ -44,7 +44,7 @@
 
   .grid-eje {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .list-nav {
@@ -68,5 +68,8 @@
   .texto-depi,
   .texto-facial {
     font-size: v.$tamano-parrafo-explicacion - 5;
+  }
+  .text-somos {
+    font-size: 20px;
   }
 }

@@ -20,6 +20,7 @@ body {
 
 .text-mision {
     @extend %estilotexto;
+    font-size: 18px;
 }
 
 .text-somos {
@@ -43,8 +44,8 @@ body {
  }
 .secvalores {
     display: flex;
-    padding: v.$espaciado-interno-secciones;
-    gap: v.$separacion-elementos;
+    // padding: v.$espaciado-interno-secciones;
+    // gap: v.$separacion-elementos;
     @extend %flexcolumna;
 }
 
@@ -53,7 +54,7 @@ body {
 }
 
 .cont-nmision {
-    padding: v.$espaciado-interno-secciones;
+    padding: v.$espaciado-interno-secciones / 2;
 }
 
 .valoreslista {
