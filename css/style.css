@@ -127,6 +127,10 @@ body {
   max-width: 500px;
 }
 
+.seccion-faciales {
+  margin: 20px;
+}
+
 .alinacion-img {
   display: flex;
   justify-content: center;
