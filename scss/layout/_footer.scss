@@ -5,12 +5,17 @@ footer {
     background-color: v.$color-fondo-encabezado-pie;
     ul {
         display: flex;
-        padding: v.$espaciado-interno-secciones;
-        @extend %flexcolumna;
+        justify-content: space-around;
+        // padding: v.$espaciado-interno-secciones;
+        // @extend %flexcolumna;
 
         li {
             list-style: none;
         }
+    }
+
+    p {
+        text-align: center;
     }
 }
 

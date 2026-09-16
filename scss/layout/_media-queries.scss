@@ -11,12 +11,18 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
   .espacio-footer {
     display: flex;
     justify-content: space-around;
 
     div {
       margin: 10px 0px 0px 0px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
     }
   }
 

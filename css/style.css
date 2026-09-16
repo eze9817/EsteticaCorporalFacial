@@ -17,7 +17,7 @@
   gap: 10px;
 }
 
-.seleccion-turno, footer ul, .reservafooter, .secvalores {
+.seleccion-turno, .reservafooter, .secvalores {
   flex-direction: column;
 }
 
@@ -234,10 +234,13 @@ footer {
 }
 footer ul {
   display: flex;
-  padding: 20px;
+  justify-content: space-around;
 }
 footer ul li {
   list-style: none;
+}
+footer p {
+  text-align: center;
 }
 
 .reservafooter {
@@ -390,6 +393,10 @@ footer ul li {
   }
   .espacio-footer div {
     margin: 10px 0px 0px 0px;
+  }
+  .espacio-footer ul {
+    display: flex;
+    flex-direction: column;
   }
   h1 {
     font-style: italic;
