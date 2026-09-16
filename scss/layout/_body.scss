@@ -16,7 +16,6 @@ body {
 
 .contenedor2 {
     display: flex;
-    padding: v.$espaciado-interno-secciones;
 }
 
 .text-mision {
@@ -28,16 +27,21 @@ body {
 }
 
 .comentarios {
+    // font-size: v.$tamano-parrafo-comentarios;
     border-radius: v.$radio-tarjeta-comentarios;
     max-width: 500px;
 }
 
-.imgs {
-    display: flex;
-    border-radius: v.$radio-imagenes;
-    max-width: 100%;
+.alinacion-img {
+     display: flex;
+     justify-content: center;
 }
 
+.imgs {
+     display: flex;
+     border-radius: v.$radio-imagenes;
+     max-width: 100%;
+ }
 .secvalores {
     display: flex;
     padding: v.$espaciado-interno-secciones;
@@ -71,8 +75,10 @@ body {
 }
 
 .borde section {
+    margin: 20px;
     border: 1px solid black;
     border-radius: v.$radio-tarjeta-comentarios;
+    background-color: v.$color-fondo-secciones;
 }
 
 .canvasfondo {

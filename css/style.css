@@ -65,7 +65,6 @@ main section div ul p:hover {
 }
 
 header {
-  padding: 20px;
   background-color: #f2aeae;
 }
 header .contenedor-h1 {
@@ -79,8 +78,7 @@ header .contenedor-h1 {
 
 .logo-img {
   display: flex;
-  max-width: 20vh;
-  border-radius: 2rem;
+  max-width: 12vh;
 }
 
 .navbar-collapse {
@@ -92,11 +90,11 @@ header .contenedor-h1 {
   display: flex;
   list-style: none;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 body {
-  background-color: #f0c3c3;
+  background-color: #E8D8D8;
   font-family: "Inter", sans-serif;
 }
 
@@ -114,12 +112,16 @@ body {
 
 .contenedor2 {
   display: flex;
-  padding: 20px;
 }
 
 .comentarios {
   border-radius: 16px;
   max-width: 500px;
+}
+
+.alinacion-img {
+  display: flex;
+  justify-content: center;
 }
 
 .imgs {
@@ -155,12 +157,14 @@ body {
 }
 
 .borde section {
+  margin: 20px;
   border: 1px solid black;
   border-radius: 16px;
+  background-color: #f0c3c3;
 }
 
 .canvasfondo {
-  background-color: rgb(96.1176470588%, 84.4705882353%, 84.4705882353%);
+  background-color: rgb(94.6900695762%, 90.9962049336%, 90.9962049336%);
 }
 
 .carousel-inner {
@@ -226,7 +230,6 @@ section h4 {
 }
 
 footer {
-  padding: 20px;
   background-color: #f2aeae;
 }
 footer ul {
@@ -373,13 +376,20 @@ footer ul li {
   }
 }
 @media (min-width: 700px) {
+  .logo-img {
+    display: flex;
+    max-width: 15vh;
+  }
   .grid-eje {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .grid-footer {
+  .espacio-footer {
     display: flex;
-    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+  }
+  .espacio-footer div {
+    margin: 10px 0px 0px 0px;
   }
   h1 {
     font-style: italic;
@@ -390,6 +400,10 @@ footer ul li {
   }
 }
 @media (min-width: 1024px) {
+  .logo-img {
+    display: flex;
+    max-width: 20vh;
+  }
   .grid-eje {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -400,6 +414,17 @@ footer ul li {
   }
   .cover-img-carru {
     height: 100vh;
+  }
+  .espacio-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .espacio-footer div {
+    margin: 10px 0px 0px 0px;
+  }
+  .texto-depi,
+  .texto-facial {
+    font-size: 18px;
   }
 }
 

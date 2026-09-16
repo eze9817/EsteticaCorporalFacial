@@ -2,7 +2,6 @@
 @use "../utilities/mixins";
 
 footer { 
-    padding: v.$espaciado-interno-secciones;
     background-color: v.$color-fondo-encabezado-pie;
     ul {
         display: flex;

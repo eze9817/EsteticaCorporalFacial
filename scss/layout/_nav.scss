@@ -12,5 +12,5 @@
     display: flex;
     list-style: none;
     flex-direction: column;
-    gap: v.$espaciado-interno-secciones / 2;
+    gap: v.$espaciado-interno-secciones - 15;
 }

@@ -2,7 +2,6 @@
 @use "../utilities/mixins";
 
 header {
-  padding: v.$espaciado-interno-secciones;
   background-color: v.$color-fondo-encabezado-pie;
 
   .contenedor-h1 {
@@ -24,6 +23,5 @@ header {
 
 .logo-img {
   display: flex;
-  max-width: 20vh;
-  border-radius: v.$radio-logo;
+  max-width: 12vh;
 }
