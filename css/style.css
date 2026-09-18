@@ -67,7 +67,7 @@ main section div ul p:hover {
 header {
   background-color: #f2aeae;
 }
-header .contenedor-h1 {
+header .contenedor-titulo {
   background: #f2aeae;
   background: radial-gradient(circle, rgb(242, 174, 174) 2%, rgb(232, 93, 140) 18%, rgb(232, 95, 141) 30%, rgb(236, 128, 155) 52%, rgb(89, 38, 62) 68%, rgb(236, 128, 155) 89%);
 }
@@ -413,6 +413,7 @@ footer p {
   h1 {
     font-style: italic;
     font-weight: 600;
+    font-size: 30px;
   }
   .cover-img-carru {
     height: 100vh;
